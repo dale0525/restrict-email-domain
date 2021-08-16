@@ -1,5 +1,5 @@
 ## Restrict Email Domain
-Prevent people from registering with blacklisted email domains from a remote list.
+Prevent people from registering on Wordpress with blacklisted email domains from a remote list.
 
 ## Description
 
