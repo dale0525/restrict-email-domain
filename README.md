@@ -11,7 +11,7 @@ This plugin will block email domains in the above disposable list from registeri
 
 This plugin does not track data outside of what WordPress already collects. It utilizes the submitted email address to validate the domain and compares it to the list of prohibited domains and emails. No additional data is processed.
 
-## Credits
+= Credits =
 
 This plugin is a modification of [Ban Hammer](https://wordpress.org/plugins/ban-hammer/), while utilizing the function of reading blacklist from remote URL, and removed the multisite and buddypress part.
 
@@ -28,19 +28,22 @@ Copy the whole directory into your wordpress's wp-content/plugins folder
 ## Screenshots
 
 1. Default Error message
-
 ![](https://github.com/dale0525/image_host/raw/master/restrict-email-domain-screenshot-1.png)
-
 2. Admin screen
-
 ![](https://github.com/dale0525/image_host/raw/master/restrict-email-domain-screenshot-2.png)
 
 ## Frequently Asked Questions
 ### Does this plugin work with Multisite, BuddyPress or Woocommerce?
-> No, this plugin is mainly for my own use so I will not pay any effort on further development (unless I myself need). You can refer to the Ban Hammer plugin to realize your own need.
+```
+No, this plugin is mainly for my own use so I will not pay any effort on further development (unless I myself need). You can refer to the Ban Hammer plugin to realize your own need.
+```
 
 ### Can I restrict a whole email instead of a domain?
-> Sure, but you need to submit your own blacklist URL in the plugin settings page. The plugin simply uses the "stripos" function to check if the blacklist contains the email submitted by the user.
+```
+Sure, but you need to submit your own blacklist URL in the plugin settings page. The plugin simply uses the "stripos" function to check if the blacklist contains the email submitted by the user.
+```
 
 ### Is wildcard (*) supported?
-> No, but you can modify the plugin with your own risk. Simply uncomment the wildcard part in the restrict_email_domain_drop function and comment the don't use wildcard part.
+```
+No, but you can modify the plugin with your own risk. Simply uncomment the wildcard part in the restrict_email_domain_drop function and comment the don't use wildcard part.
+```
