@@ -30,6 +30,7 @@ Copy the whole directory into your wordpress's wp-content/plugins folder
 1. Default Error message
 
 ![](https://github.com/dale0525/image_host/raw/master/restrict-email-domain-screenshot-1.png)
+
 2. Admin screen
 
 ![](https://github.com/dale0525/image_host/raw/master/restrict-email-domain-screenshot-2.png)
