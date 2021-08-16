@@ -35,9 +35,6 @@ class RestrictEmailDomain {
 	public $option_defaults;
 	public $options;
 
-	// DB version, for schema upgrades.
-	// public $db_version = 1;
-
 	// Instance
 	public static $instance;
 
@@ -60,7 +57,6 @@ class RestrictEmailDomain {
 
 		// Setting plugin defaults here:
 		$this->option_defaults = array(
-			// 'db_version'   => $this->db_version,
 			'message' => __( '<strong>ERROR</strong>: Sorry, but the email you used is not allowed.', 'restrict-email-domain' ),
             'urllist' => 'https://raw.githubusercontent.com/disposable/disposable-email-domains/master/domains.txt'
 		);
@@ -233,7 +229,7 @@ class RestrictEmailDomain {
 	 * @access public
 	 */
 	public function restrict_email_domain_drop( $user_login, $user_email, $errors ) {
-		$bannedlist_string = file_get_contents("https://raw.githubusercontent.com/disposable/disposable-email-domains/master/domains.txt");
+		$bannedlist_string = file_get_contents($this->options['urllist']);
 		$bannedlist_array  = explode( "\n", $bannedlist_string );
 		$bannedlist_size   = count( $bannedlist_array );
 
