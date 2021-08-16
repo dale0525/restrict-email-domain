@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Restrict Email Domain
-Plugin URI: https://www.logiconsole.com
-Description: Prevent people from registering with blacklisted email domains from https://github.com/disposable/disposable.git
+Plugin URI: https://github.com/dale0525/restrict-email-domain
+Description: Prevent people from registering on Wordpress with blacklisted email domains from a remote list.
 Version: 1.0.0
 Author: Logic Tan
 Author URI: https://www.logiconsole.com
